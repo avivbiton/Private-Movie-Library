@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item app:showAsAction="always"
+    android:title="Add Movie"
+    android:icon="@drawable/add_icon"
+    android:onClick="OnAddNewMovieClicked"></item>
+    <item android:onClick="OnClearMoviesClicked"
+        app:showAsAction="never"
+        android:icon="@drawable/delete_icon"
+        android:title="Clear Movies"></item>
+    <item android:title="Search Movie"
+        app:showAsAction="always"
+        android:icon="@drawable/search_icon"
+        android:onClick="OnAddFromInternetClicked"></item>
+</menu>

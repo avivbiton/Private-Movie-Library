@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.biton.aviv.movieproject.MoviePanelActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="25dp"
+    android:paddingTop="5dp"
+    android:background="@color/backgroundColor"
+    android:paddingEnd="35dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/panel_subject"
+            style="@style/basicStyle"/>
+        <EditText
+            android:id="@+id/panel_Subject_EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/borderbackground"
+            android:layout_marginStart="5dp"
+            android:maxHeight="40dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/panel_body"
+        style="@style/basicStyle"/>
+    <EditText
+        android:id="@+id/panel_description_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/borderbackground"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="top|left"
+        android:hint="@string/panel_description_hint"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/basicStyle"
+            android:text="@string/panel_imageURL"/>
+        <EditText
+            android:id="@+id/panel_imageURL_EditText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:maxHeight="35dp"
+            android:background="@drawable/borderbackground"
+            android:layout_marginStart="5dp" />
+        <Button
+            android:id="@+id/panel_show_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show"
+            android:onClick="OnImageShowButtonClicked"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/panel_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="5dp"
+
+        app:srcCompat="@drawable/delete_icon" />
+
+    <CheckBox
+        android:id="@+id/panel_watched_Checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/colorPrimary"
+        android:checked="false"
+        android:text="@string/panel_watched" />
+
+    <RatingBar
+        android:id="@+id/panel_star_RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:rating="1"
+        android:theme="@style/RatingBar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/panel_confirm_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/panel_confirm"
+            android:onClick="OnConfirmButtonClicked"/>
+        <Button
+            android:id="@+id/panel_cancel_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/panel_cancel"
+            android:onClick="OnCancelButtonClicked"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>

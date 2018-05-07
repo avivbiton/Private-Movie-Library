@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#273594</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="backgroundColor">#ffffff</color>
+    <color name="adapterBackground">#1e1e1e</color>
+    <color name="sortby_bar">#7b7f84</color>
+
+    <color name="watchedColor">#0b9424</color>
+    <color name="planToWatchColor">#aeaeae</color>
+</resources>

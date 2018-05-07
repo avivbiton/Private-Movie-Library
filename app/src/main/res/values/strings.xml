@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Movie Project</string>
+    <string name="panel_show">Show</string>
+    <string name="panel_confirm">Confirm</string>
+    <string name="panel_cancel">Cancel</string>
+    <string name="panel_subject">Subject:</string>
+    <string name="panel_body">body</string>
+    <string name="panel_imageURL">Image URL:</string>
+    <string name="panel_description_hint">Enter description here</string>
+    <string name="panel_watched">Watched</string>
+
+
+    <string name="sort_by_date">Date Added</string>
+    <string name="sort_by_rating">Rating</string>
+    <string name="sort_by_name">Name</string>
+    <string name="sort_by_watched">Watched</string>
+    <string name="sort_by_unwatched">Unwatched</string>
+
+
+    <string-array name="sortby_array">
+
+        <item>@string/sort_by_date</item>
+        <item>@string/sort_by_rating</item>
+        <item>@string/sort_by_name</item>
+        <item>@string/sort_by_watched</item>
+        <item>@string/sort_by_unwatched</item>
+
+    </string-array>
+</resources>
